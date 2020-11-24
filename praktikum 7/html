@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas</title>
+</head>
+
+<body>
+    <h1>Nilai akhir mahasisiwa</h1>
+    <p>nama: jason</p>
+    <p>Nim: 1234567890</p>
+    <br />
+
+    <?php
+    // varianle 
+    $nilai_tugas = 100;
+    $nilai_uts = 80;
+    $nilai_uas = 90;
+    $nilai_akhir = 91;
+
+
+    echo 'Nilai tugas anda: ' . $nilai_tugas . '<br/>';
+    echo 'Nilai UTS anda: ' . $nilai_uts . '<br/>';
+    echo 'Nilai UAS anda:' . $nilai_uas . '<br/>';
+
+
+    if ($nilai_akhir > 75 && $nilai_akhir < 100) {
+        echo 'Nilai akhir anda: ' . $nilai_akhir;
+        echo '<p>anda dinyatakan lulus dengan predikat: A</p>';
+    } else if ($nilai_akhir > 70 && $nilai_akhir < 80) {
+        echo 'Nilai akhir anda: ' . $nilai_akhir;
+        echo '<p>anda dinyatakan lulus dengan predikat: B</p>';
+    } else if ($nilai_akhir > 90 && $nilai_akhir < 85) {
+        echo 'Nilai akhir anda: ' . $nilai_akhir;
+        echo '<p>anda dinyatakan lulus dengan predikat: C</p>';
+    } else {
+        echo 'Nilai akhir anda: ' . $nilai_akhir;
+        echo '<p>anda dinyatakan lulus dengan predikat: D</p>';
+    }
+    ?>
+</body>
+
+</html>
